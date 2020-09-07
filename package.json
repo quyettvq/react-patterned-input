@@ -1,0 +1,47 @@
+{
+  "name": "react-patterned-input",
+  "version": "1.0.0",
+  "description": "allows users type following a predefined pattern",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node bin/jest",
+    "build": "node bin/webpack && node bin/webpack --min",
+    "watch": "node bin/webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quyettvq/react-patterned-input.git"
+  },
+  "keywords": [
+    "patterned input",
+    "react input",
+    "patterned typing"
+  ],
+  "author": "Trần Văn Quyết <quyettvq@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/quyettvq/react-patterned-input/issues"
+  },
+  "homepage": "https://github.com/quyettvq/react-patterned-input#readme",
+  "peerDependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/preset-react": "^7.9.4",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "concurrently": "^5.1.0",
+    "css-loader": "3.3.0",
+    "jest": "^26.0.1",
+    "less": "^3.11.1",
+    "less-loader": "^5.0.0",
+    "style-loader": "^1.1.4",
+    "path": "^0.12.7",
+    "webpack": "^4.43.0"
+  }
+}
