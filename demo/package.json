@@ -2,7 +2,7 @@
   "name": "demo",
   "version": "0.0.1",
   "dependencies": {
-    "i18n-zone": "^1.1.7",
+    "i18n-zone": "^1.1.8",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-patterned-input": "^1.0.0"
