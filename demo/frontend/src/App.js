@@ -8,5 +8,5 @@ export default function App({}) {
             template={dateTemplate}
             onChange={({year, month, date}) => console.log(year, month, date)}
         />
-    </div>
+    </div>;
 }

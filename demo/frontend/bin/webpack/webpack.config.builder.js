@@ -11,7 +11,6 @@ function buildConfig(mode = 'development') {
     const ext = useMinify ? 'min.js' : 'js';
 
     return {
-        target: 'web',
         mode: mode,
         context: __dirname,
         entry: {

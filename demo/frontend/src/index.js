@@ -1,7 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+import i18n from 'i18n-zone';
 
-// ReactDOM.render(document.getElementById('app-root'), <App/>);
+ReactDOM.render(<App/>, document.getElementById('app-root'));
 
-console.log('hahaha');
+i18n.settings.setResource('en', {});
+console.log(i18n.translate('Hahahahaa'));
+

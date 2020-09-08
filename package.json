@@ -1,7 +1,7 @@
 {
   "name": "react-patterned-input",
-  "version": "1.0.0",
-  "description": "allows users type following a predefined pattern",
+  "version": "1.0.1",
+  "description": "Allows users type following a predefined pattern",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -16,7 +16,8 @@
   "keywords": [
     "patterned input",
     "react input",
-    "patterned typing"
+    "pattern input",
+    "template input"
   ],
   "author": "Trần Văn Quyết <quyettvq@gmail.com>",
   "license": "MIT",
@@ -40,8 +41,10 @@
     "jest": "^26.0.1",
     "less": "^3.11.1",
     "less-loader": "^5.0.0",
-    "style-loader": "^1.1.4",
     "path": "^0.12.7",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "style-loader": "^1.1.4",
     "webpack": "^4.43.0"
   }
 }

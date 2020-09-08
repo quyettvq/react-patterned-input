@@ -1,12 +1,14 @@
 @import "../../../css/_mixin";
 
-.template-input .number-piece {
+.patterned-input .number-piece {
 
     input {
         border: none;
         background: @colorv-white;
         width: 0; // note that min-width is set by JS
         caret-color: transparent;
+        outline: none;
+        border-radius: 0;
     }
 
     &.focused {

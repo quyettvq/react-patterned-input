@@ -18,9 +18,9 @@ function buildConfig(mode = 'development') {
         },
         output: {
             path: bundlesDir,
-            library: 'patternedInput',
             filename: `[name].${ext}`,
-            libraryTarget: 'commonjs2'
+            library: 'patternedInput',
+            libraryTarget: 'umd'
         },
         module: {
             rules: [
@@ -54,7 +54,10 @@ function buildConfig(mode = 'development') {
         optimization: {
             minimize: useMinify,
         },
-        externals: ['react', 'react-dom']
+        externals: {
+            react: 'react',
+            reactDOM: 'react-dom'
+        }
     };
 }
 

@@ -1,5 +1,14 @@
-module.exports =
-/******/ (function(modules) { // webpackBootstrap
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory(require("react"));
+	else if(typeof define === 'function' && define.amd)
+		define(["react"], factory);
+	else if(typeof exports === 'object')
+		exports["patternedInput"] = factory(require("react"));
+	else
+		root["patternedInput"] = factory(root["react"]);
+})(window, function(__WEBPACK_EXTERNAL_MODULE_react__) {
+return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
 /******/
@@ -105,7 +114,7 @@ eval("exports = module.exports = __webpack_require__(/*! ../../../node_modules/c
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/css-loader/dist/runtime/api.js */ \"../../node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \".template-input .number-piece input {\\n  border: none;\\n  background: #FFFFFF;\\n  width: 0;\\n  caret-color: transparent;\\n}\\n.template-input .number-piece.focused input {\\n  background: #3F96D6;\\n  color: #FFFFFF;\\n}\\n\", \"\"]);\n\n\n//# sourceURL=webpack://patternedInput/D:/npm_package/react-patterned-input/src/main/patterned-input/pieces/number-piece/NumberPiece.less?D:/npm_package/react-patterned-input/node_modules/css-loader/dist/cjs.js?%7B%22url%22:false%7D!D:/npm_package/react-patterned-input/node_modules/less-loader/dist/cjs.js");
+eval("exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/css-loader/dist/runtime/api.js */ \"../../node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \".patterned-input .number-piece input {\\n  border: none;\\n  background: #FFFFFF;\\n  width: 0;\\n  caret-color: transparent;\\n  outline: none;\\n  border-radius: 0;\\n}\\n.patterned-input .number-piece.focused input {\\n  background: #2F96D6;\\n  color: #FFFFFF;\\n}\\n\", \"\"]);\n\n\n//# sourceURL=webpack://patternedInput/D:/npm_package/react-patterned-input/src/main/patterned-input/pieces/number-piece/NumberPiece.less?D:/npm_package/react-patterned-input/node_modules/css-loader/dist/cjs.js?%7B%22url%22:false%7D!D:/npm_package/react-patterned-input/node_modules/less-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -148,11 +157,11 @@ eval("\n\nvar isOldIE = function isOldIE() {\n  var memo;\n  return function mem
 /*!**************************************************************!*\
   !*** D:/npm_package/react-patterned-input/src/main/index.js ***!
   \**************************************************************/
-/*! exports provided: default, PIECE_NUMBER, PIECE_SELECT */
+/*! exports provided: PatternedInput, PIECE_NUMBER, PIECE_SELECT */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _patterned_input_PatternedInput__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./patterned-input/PatternedInput */ \"../../src/main/patterned-input/PatternedInput.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"PIECE_NUMBER\", function() { return _patterned_input_PatternedInput__WEBPACK_IMPORTED_MODULE_0__[\"PIECE_NUMBER\"]; });\n\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"PIECE_SELECT\", function() { return _patterned_input_PatternedInput__WEBPACK_IMPORTED_MODULE_0__[\"PIECE_SELECT\"]; });\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_patterned_input_PatternedInput__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\n\n\n//# sourceURL=webpack://patternedInput/D:/npm_package/react-patterned-input/src/main/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _patterned_input_PatternedInput__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./patterned-input/PatternedInput */ \"../../src/main/patterned-input/PatternedInput.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"PatternedInput\", function() { return _patterned_input_PatternedInput__WEBPACK_IMPORTED_MODULE_1__[\"default\"]; });\n\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"PIECE_NUMBER\", function() { return _patterned_input_PatternedInput__WEBPACK_IMPORTED_MODULE_1__[\"PIECE_NUMBER\"]; });\n\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"PIECE_SELECT\", function() { return _patterned_input_PatternedInput__WEBPACK_IMPORTED_MODULE_1__[\"PIECE_SELECT\"]; });\n\n\n\n // export default function ({}) {\n//     return <div>HHHHH</div>;\n// }\n//\n// const PIECE_NUMBER = 'number';\n// const PIECE_SELECT = 'select';\n//\n// export {\n//     PIECE_NUMBER,\n//     PIECE_SELECT\n// }\n\n/*\r\nconst dateTemplate = [\r\n    {\r\n        key: 'date',\r\n        type: PIECE_NUMBER,\r\n        min: 1,\r\n        max: ({year, month}) => getLastDayOfMonth([year, month]),\r\n        increasingDefaultNumber: getCurrentDayOfMonth(),\r\n        decreasingDefaultNumber: getCurrentDayOfMonth(),\r\n        emptyDigit: 'd',\r\n    },\r\n    '/',\r\n    {\r\n        key: 'month',\r\n        type: PIECE_NUMBER,\r\n        min: 1,\r\n        max: 12,\r\n        increasingDefaultNumber: getCurrentMonthOfYear(),\r\n        decreasingDefaultNumber: getCurrentMonthOfYear(),\r\n        emptyDigit: 'm',\r\n    },\r\n    '/',\r\n    {\r\n        key: 'year',\r\n        type: PIECE_NUMBER,\r\n        min: 1,\r\n        max: 9999,\r\n        increasingDefaultNumber: getCurrentYear(),\r\n        decreasingDefaultNumber: getCurrentYear(),\r\n        emptyDigit: 'y',\r\n    },\r\n];\r\n\r\nReactDOM.render(<App/>, document.getElementById('app-root'));\r\n\r\nfunction App({}) {\r\n    return <div>\r\n        <PatternedInput\r\n            template={dateTemplate}\r\n            onChange={({year, month, date}) => console.log(year, month, date)}\r\n        />\r\n    </div>;\r\n}\r\n\r\nfunction checkIsLeapYear(year)\r\n{\r\n    return ((year % 4 === 0) && (year % 100 !== 0)) || (year % 400 === 0);\r\n}\r\n\r\nfunction getLastDayOfMonth([year, month]) {\r\n    if (year === null && month === null) {\r\n        return 31;\r\n    }\r\n\r\n    if (month === 2) {\r\n        if (year === null || checkIsLeapYear(year)) {\r\n            return 29;\r\n        }\r\n\r\n        return 28;\r\n    }\r\n\r\n    if ([4, 6, 9, 11].includes(month)) {\r\n        return 30;\r\n    }\r\n\r\n    return 31;\r\n}\r\n\r\nfunction getToday() {\r\n    const now = new Date();\r\n    return [now.getFullYear(), now.getMonth() + 1, now.getDate()];\r\n}\r\n\r\nfunction getCurrentYear() {\r\n    return new Date().getFullYear();\r\n}\r\n\r\nfunction getCurrentMonthOfYear() {\r\n    return new Date().getMonth() + 1;\r\n}\r\n\r\nfunction getCurrentDayOfMonth() {\r\n    return new Date().getDate();\r\n}\r\n*/\n\n//# sourceURL=webpack://patternedInput/D:/npm_package/react-patterned-input/src/main/index.js?");
 
 /***/ }),
 
@@ -244,8 +253,9 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("module.exports = require(\"react\");\n\n//# sourceURL=webpack://patternedInput/external_%22react%22?");
+eval("module.exports = __WEBPACK_EXTERNAL_MODULE_react__;\n\n//# sourceURL=webpack://patternedInput/external_%22react%22?");
 
 /***/ })
 
 /******/ });
+});
